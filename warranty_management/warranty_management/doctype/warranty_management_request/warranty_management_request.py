@@ -3,9 +3,8 @@
 
 
 from __future__ import unicode_literals
-import frappe
 from frappe.model.document import Document
 
 
-class WarrantyManagement(Document):
+class WarrantyManagementRequest(Document):
     pass

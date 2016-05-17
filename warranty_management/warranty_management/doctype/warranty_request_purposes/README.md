@@ -1,0 +1,1 @@
+Table containing details of Items checked during Warranty Request.
