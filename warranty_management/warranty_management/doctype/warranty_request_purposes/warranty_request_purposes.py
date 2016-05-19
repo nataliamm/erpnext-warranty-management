@@ -6,5 +6,6 @@ import frappe
 
 from frappe.model.document import Document
 
+
 class WarrantyRequestPurposes(Document):
 	pass

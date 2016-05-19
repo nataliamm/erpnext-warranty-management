@@ -70,6 +70,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+    "Warranty Claim": {
+        "before_save": "warranty_management.warranty_claim.before_save",
+    },
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
@@ -111,3 +116,6 @@ app_license = "MIT"
 # 	"frappe.desk.doctype.event.event.get_events": "warranty_management.event.get_events"
 # }
 
+doctype_js = {
+    "Warranty Claim": ["custom_scripts/warranty_claim.js"]
+}

@@ -4,3 +4,5 @@
 *.swp
 tags
 warranty_management/docs/current
+*.map
+sftp-config.json
