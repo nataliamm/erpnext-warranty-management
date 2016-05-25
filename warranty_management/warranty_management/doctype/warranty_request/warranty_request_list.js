@@ -4,6 +4,9 @@ frappe.listview_settings['Warranty Request'] = {
     has_indicator_for_draft: true,
 
     get_indicator: function(doc) {
+        if(doc.docstatus==1) {
+            return [__("Submitted"), "red", "docstatus,=,1"];
+        }
         if(doc.status==="Start Receiving") {
             return [__("Start Receiving"), "red", "status,=,Start Receiving"];
         } else if(doc.status==="Confirmed") {

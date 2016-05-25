@@ -11,7 +11,6 @@ frappe.ui.form.on("Warranty Claim", "onload", function(frm) {
 
 
 cur_frm.cscript.custom_warranty_amc_status = function(doc, dt, dn) {
-	console.log('warranty_amc');
 	cur_frm.toggle_reqd("is_paid", doc.warranty_amc_status=="Out of Warranty" || doc.warranty_amc_status=="Out of AMC");
 	cur_frm.set_value("is_paid", doc.warranty_amc_status=="Out of Warranty" || doc.warranty_amc_status=="Out of AMC");
 	cur_frm.refresh_fields();
@@ -24,36 +23,5 @@ cur_frm.cscript.custom_refresh = function(doc, dt, dn) {
 			make_warranty_management_request, __("Make"))
 		cur_frm.page.set_inner_btn_group_as_primary(__("Make"));
 	}
+	cur_frm.set_df_property("status", "options", "\nOpen\nClosed\nWork In Progress\nStart Receiving\nConfirmed\nTesting\nTesting Completed\nRepairing\nRepairing Completed\nCanceled");
 }
-
-
-// var dialog = new frappe.ui.Dialog({
-// 			title: __("Ask Customer"),
-// 			fields: [
-// 				{fieldtype: "Check", fieldname: "agreed_to_paid", label:__("Agree To Paid"),
-// 					description: __('Customer agree to paid'), reqd: 1},
-// 				{fieldtype: "Button", label: __("Save"), fieldname: "save", "cssClass": "btn-primary"},
-// 			]
-// 		});
-
-// 		dialog.fields_dict.save.$input.click(function() {
-// 			args = dialog.get_values();
-// 			if(!args) return;
-// 			dialog.hide();
-// 			return frappe.call({
-// 				type: "GET",
-// 				method: "warranty_management.warranty_claim.set_is_paid",
-// 				args: {
-// 					"source_name": cur_frm.doc.name,
-// 					"for_supplier": args.supplier
-// 				},
-// 				freeze: true,
-// 				callback: function(r) {
-// 					if(!r.exc) {
-// 						var doc = frappe.model.sync(r.message);
-// 						frappe.set_route("Form", r.message.doctype, r.message.name);
-// 					}
-// 				}
-// 			})
-// 		});
-// 		dialog.show();

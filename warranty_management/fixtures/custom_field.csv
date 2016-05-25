@@ -19,3 +19,8 @@
 "Info:","","Valid DocType","One of: Attach, Attach Image, Button, Check, Code, Column Break, Currency, Data, Date, Datetime, Dynamic Link, Float, HTML, Image, Int, Link, Long Text, Password, Percent, Read Only, Section Break, Select, Small Text, Table, Text, Text Editor, Time","","","","One of: 1, 2, 3, 4, 5, 6, 7, 8, 9","","0 or 1","","","","","Integer","","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1"
 "Start entering data below this line"
 "","""Warranty Claim-is_paid""","Warranty Claim","Check","Is Paid","is_paid","amc_expiry_date","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Stock Entry-warranty_claim""","Stock Entry","Link","Warranty Claim","warranty_claim","credit_note","","Warranty Claim",0,"","","","",0,"",0,0,0,0,1,0,0,0,0,0,0,0,0
+"","""Material Request-warranty_claim""","Material Request","Link","Warranty Claim","warranty_claim","per_ordered","","Warranty Claim",0,"","","","",0,"",0,0,0,0,1,0,0,0,0,0,0,0,0
+"","""Delivery Note-warranty_claim""","Delivery Note","Link","Warranty Claim","warranty_claim","per_billed","","Warranty Claim",0,"","","","",0,"",0,0,0,0,1,0,0,0,0,0,0,0,0
+"","""Sales Invoice-warranty_claim""","Sales Invoice","Link","Warranty Claim","warranty_claim","source","","Warranty Claim",0,"","","","",0,"",0,0,0,0,1,0,0,0,0,0,0,0,0
+"","""Sales Order-warranty_claim""","Sales Order","Link","Warranty Claim","warranty_claim","campaign","","Warranty Claim",0,"","","","",0,"",0,0,0,0,1,0,0,0,0,0,0,0,0

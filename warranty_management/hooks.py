@@ -30,7 +30,7 @@ app_license = "MIT"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+#   "Role": "home_page"
 # }
 
 # Website user home page (by function)
@@ -59,11 +59,11 @@ app_license = "MIT"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#   "Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
 # has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
+#   "Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
 # Document Events
@@ -76,33 +76,33 @@ doc_events = {
     },
 }
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
+#   "*": {
+#       "on_update": "method",
+#       "on_cancel": "method",
+#       "on_trash": "method"
+#   }
 # }
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"warranty_management.tasks.all"
-# 	],
-# 	"daily": [
-# 		"warranty_management.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"warranty_management.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"warranty_management.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"warranty_management.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+    "daily": [
+        "warranty_management.tasks.all"
+    ],
+    # "daily": [
+    #    "warranty_management.tasks.daily"
+    # ],
+    #   "hourly": [
+    #       "warranty_management.tasks.hourly"
+    # ],
+    # "weekly": [
+    #    "warranty_management.tasks.weekly"
+    # ]
+    # "monthly": [
+    #    "warranty_management.tasks.monthly"
+    # ]
+}
 
 # Testing
 # -------
@@ -113,7 +113,7 @@ doc_events = {
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "warranty_management.event.get_events"
+#   "frappe.desk.doctype.event.event.get_events": "warranty_management.event.get_events"
 # }
 
 doctype_js = {
