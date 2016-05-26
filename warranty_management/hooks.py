@@ -87,12 +87,12 @@ doc_events = {
 # ---------------
 
 scheduler_events = {
-    "daily": [
-        "warranty_management.tasks.all"
-    ],
-    # "daily": [
-    #    "warranty_management.tasks.daily"
+    # "all": [
+    #     "warranty_management.tasks.all"
     # ],
+    "daily": [
+        "warranty_management.tasks.daily"
+    ],
     #   "hourly": [
     #       "warranty_management.tasks.hourly"
     # ],
